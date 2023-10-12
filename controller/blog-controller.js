@@ -19,4 +19,6 @@ export const getAllBlogs = async (req,res,next ) =>{
     return res.status(200).json({blogs})
 }
 
-export const createBlog = async(req,res,next) =>{}
+export const createBlog = async(req,res,next) =>{
+    const [title, description, image,user] = req.body
+}

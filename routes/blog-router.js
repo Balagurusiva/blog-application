@@ -3,8 +3,8 @@ import { createBlog, getAllBlogs } from "../controller/blog-controller.js";
 
 const routes = express.Router();
 
-routes.get('/', getAllBlogs)
-routes.post('/', createBlog)
+routes.post('/create', createBlog)
+routes.get('/', getAllBlogs) 
 
 
 export default routes
