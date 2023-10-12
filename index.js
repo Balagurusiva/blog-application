@@ -2,12 +2,14 @@ import express from 'express'
 import dotenv from 'dotenv'
 import mongoose from 'mongoose';
 import user from './routes/user-routes.js'
+import blogs from './routes/blog-router.js'
 
 dotenv.config();
-
 const app = express()
 
 app.use(express.json())
+
+app.use('/api/blogs', blogs )
 app.use('/api/user',user)
 
 mongoose
