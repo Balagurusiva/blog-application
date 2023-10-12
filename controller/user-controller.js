@@ -16,7 +16,6 @@ export const getAllUser = async (req,res,next) =>{
          return res.status(200).json({user})
 }
 
-
 export const signup = async (req,res , next ) =>{
     let {name, email, password} = req.body
 
